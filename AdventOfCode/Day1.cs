@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace AdventOfCode
@@ -10,45 +11,20 @@ namespace AdventOfCode
         {
             Console.WriteLine("Hello World!");
 
-            List<WindowOfThree> windowThreeList = new List<WindowOfThree>();
+            List<int> fileLines = System.IO.File.ReadAllLines("C:/Users/maggioli/Desktop/Apprentissage/EPSIC-3/AdventOfCode/AdventOfCode/src-files/data-day-1.txt").Select(int.Parse).ToList();
 
-            // Read each line of the file into a string array. Each element of the array is one line of the file.
-            List<string> fileLines = new List<string>(System.IO.File.ReadAllLines("C:/Users/mm/source/repos/AdventOfCode/AdventOfCode/src-files/data-day-1.txt"));
-
-            Console.WriteLine(fileLines[fileLines.Count - 1]);
-            Console.WriteLine(fileLines[fileLines.Count - 2]);
-            Console.WriteLine(fileLines[fileLines.Count - 3]);
-
-
-            fileLines.ForEach(line =>
+            var count = -1;
+            var prevElement = 0;
+            for (var i=2; i < fileLines.Count; i++)
             {
-                WindowOfThree windowOf3 = new WindowOfThree();
+                var actual = fileLines[i] + fileLines[i-1] + fileLines[i-2];
 
-                if (fileLines.IndexOf(line) <= fileLines.Count - 3)
-                {
-                    int actualLine = int.Parse(line);
-                    int nextLine = int.Parse(fileLines[fileLines.IndexOf(line) + 1]);
-                    int foreNextLine = int.Parse(fileLines[fileLines.IndexOf(line) + 2]);
+                count = actual > prevElement ? count + 1 : count;
+                
+                prevElement = actual;
 
-                    windowOf3 = new WindowOfThree(actualLine, nextLine, foreNextLine);
-                    windowThreeList.Add(windowOf3);
-                    Console.WriteLine(line);
-                    Console.WriteLine(windowOf3.Sum);
-                }
-            });
-
-            int totalIncrements = 0;
-            WindowOfThree prevWindOf3 = windowThreeList[0];
-            windowThreeList.ForEach(actualWThree =>
-            {
-                if (actualWThree.HasBiggerSum(prevWindOf3))
-                {
-                    totalIncrements++;
-                }
-                prevWindOf3 = actualWThree;
-            });
-
-            Console.WriteLine(totalIncrements);
+            }
+            Console.WriteLine(count);
 
             Console.Read();
         }
@@ -72,53 +48,4 @@ namespace AdventOfCode
             return this.Sum > otherW.Sum;
         }
     }
-
-    //static void Main(string[] args)
-    //{
-    //    Console.WriteLine("Hello World!");
-
-    //    List<WindowOfThree> windowThreeList = new List<WindowOfThree>();
-
-    //    // Read each line of the file into a string array. Each element of the array is one line of the file.
-    //    List<string> fileLines = new List<string>(System.IO.File.ReadAllLines("C:/Users/mm/source/repos/AdventOfCode/AdventOfCode/src-files/data-day-1.txt"));
-
-    //    Console.WriteLine(fileLines[fileLines.Count - 1]);
-    //    Console.WriteLine(fileLines[fileLines.Count - 2]);
-    //    Console.WriteLine(fileLines[fileLines.Count - 3]);
-
-
-    //    fileLines.ForEach(line =>
-    //    {
-    //        WindowOfThree windowOf3 = new WindowOfThree();
-
-    //        if (fileLines.IndexOf(line) <= fileLines.Count - 3)
-    //        {
-    //            int actualLine = int.Parse(line);
-    //            int nextLine = int.Parse(fileLines[fileLines.IndexOf(line) + 1]);
-    //            int foreNextLine = int.Parse(fileLines[fileLines.IndexOf(line) + 2]);
-
-    //            windowOf3 = new WindowOfThree(actualLine, nextLine, foreNextLine);
-    //            windowThreeList.Add(windowOf3);
-    //            Console.WriteLine(line);
-    //            Console.WriteLine(windowOf3.Sum);
-    //        }
-    //    });
-
-    //    int totalIncrements = 0;
-    //    WindowOfThree prevWindOf3 = windowThreeList[0];
-    //    windowThreeList.ForEach(actualWThree =>
-    //    {
-    //        if (actualWThree.HasBiggerSum(prevWindOf3))
-    //        {
-    //            totalIncrements++;
-    //        }
-    //        prevWindOf3 = actualWThree;
-    //    });
-
-    //    Console.WriteLine(totalIncrements);
-
-    //    Console.Read();
-
-    //}
-
 }

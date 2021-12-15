@@ -11,3 +11,17 @@ C:\Users\mm\source\repos\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\Adven
 C:\Users\mm\source\repos\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.dll
 C:\Users\mm\source\repos\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.pdb
 C:\Users\mm\source\repos\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.genruntimeconfig.cache
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.exe
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.deps.json
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.runtimeconfig.json
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.runtimeconfig.dev.json
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.dll
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.pdb
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.csprojAssemblyReference.cache
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.AssemblyInfoInputs.cache
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.AssemblyInfo.cs
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.csproj.CoreCompileInputs.cache
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.dll
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.pdb
+C:\Users\maggioli\Desktop\Apprentissage\EPSIC-3\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.genruntimeconfig.cache
